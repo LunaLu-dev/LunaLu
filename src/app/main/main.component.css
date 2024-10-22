@@ -1,0 +1,55 @@
+#profile-pic{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+
+.link-btn{
+  width: 180px;
+  height: 80px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0 #000000;
+}
+
+.link-btn:hover{
+  position: relative;
+  animation: btn-press 0.5s;
+  box-shadow: 0 0 0 #000000;
+  top: 3px;
+  left: 3px;
+}
+
+@keyframes btn-press {
+  from{
+    box-shadow: 3px 3px 0 #000000;
+    top: 0;
+    left: 0;
+  }
+  to{
+    box-shadow: 0 0 0 #000000;
+    top: 3px;
+    left: 3px;
+  }
+}
+
+#about-me{
+  margin: auto;
+  text-align: center;
+  background-color: aliceblue;
+  width: 1000px;
+  padding: 10px;
+}
+
+@media (max-width: 1200px){
+  #about-me{
+    width: 90%;
+  }
+}
